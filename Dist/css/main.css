@@ -183,9 +183,12 @@ main {
     border-bottom: #F78764 5px solid; }
 
 .projects {
-  display: grid;
-  grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr); }
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 1rem; 
+  margin: 4vw;
+}
+
   .projects img {
     width: 100%;
     border: 3px #fff solid; }
@@ -193,6 +196,21 @@ main {
       opacity: 0.5;
       border-color: #F78764;
       transition: all 0.5s ease-out; }
+
+.item{
+  box-sizing: border-box;
+  background-color: #F78764;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  border-radius: 10px;
+  border-color: #1F0F12;
+}
+
+.item:hover {
+  transform: scale(1.2);
+  z-index: 1;
+  background-color: #BD4089;
+}
 
 .boxes {
   display: flex;
